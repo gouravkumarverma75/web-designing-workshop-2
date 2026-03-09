@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BGMI</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#111;
+    color:white;
+}
+
+header{
+    background:black;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a{
+    color:white;
+    margin:0 10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:orange;
+}
+
+.hero{
+    height:90vh;
+    background:url("https://wallpaperaccess.com/full/6456352.jpg") center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:50px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 25px;
+    background:orange;
+    color:black;
+    font-weight:bold;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.features{
+    padding:50px;
+    text-align:center;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:#222;
+    padding:20px;
+    width:200px;
+    border-radius:10px;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.weapons{
+    padding:50px;
+    text-align:center;
+}
+
+.weapon-list{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.weapon{
+    background:#222;
+    padding:20px;
+    width:200px;
+    border-radius:10px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:black;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>BGMI</h1>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Maps</a>
+<a href="#">Weapons</a>
+<a href="#">Download</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h2>BATTLEGROUNDS MOBILE INDIA</h2>
+<p>Survive • Fight • Win</p>
+<a href="#" class="btn">Download Now</a>
+</div>
+</section>
+
+<section class="features">
+<h2>Game Features</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Maps</h3>
+<p>Erangel, Miramar, Sanhok and more battlefields.</p>
+</div>
+
+<div class="card">
+<h3>Team Battles</h3>
+<p>Play with friends in squad mode.</p>
+</div>
+
+<div class="card">
+<h3>HD Graphics</h3>
+<p>High quality visuals on mobile.</p>
+</div>
+
+</div>
+</section>
+
+<section class="weapons">
+
+<h2>Popular Weapons</h2>
+
+<div class="weapon-list">
+
+<div class="weapon">
+<h3>M416</h3>
+<p>Best assault rifle for balanced gameplay.</p>
+</div>
+
+<div class="weapon">
+<h3>AWM</h3>
+<p>Most powerful sniper rifle in the game.</p>
+</div>
+
+<div class="weapon">
+<h3>AKM</h3>
+<p>High damage but strong recoil.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 BGMI Fan Website</p>
+</footer>
+
+</body>
+</html>
