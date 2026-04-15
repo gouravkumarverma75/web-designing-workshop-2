@@ -1,0 +1,119 @@
+-- html file
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Information</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- React CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+
+  <div id="root"></div>
+
+  <script type="text/babel" src="app.js"></script>
+</body>
+</html>
+
+
+
+-- css file
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 30px;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: white;
+  width: 220px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.card p {
+  margin: 8px 0;
+  color: #555;
+}
+
+
+
+-- javascript file
+
+function Student(props) {
+  return (
+    <div className="card">
+      <h2>{props.name}</h2>
+      <p><strong>Age:</strong> {props.age}</p>
+      <p><strong>Course:</strong> {props.course}</p>
+      <p><strong>City:</strong> {props.city}</p>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <h1>Student Information</h1>
+
+      <div className="container">
+        <Student
+          name="Gourav"
+          age="20"
+          course="BCA"
+          city="Ghaziabad"
+        />
+
+        <Student
+          name="Aman"
+          age="21"
+          course="B.Tech"
+          city="Noida"
+        />
+
+        <Student
+          name="Divyanshu"
+          age="19"
+          course="BBA"
+          city="Delhi"
+        />
+      </div>
+    </div>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
