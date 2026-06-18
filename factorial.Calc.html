@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,intial-scale=1.0">
+  <title>Factorial Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #6406c2;
+      text-align: center;
+      padding: 40px;
+    }
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      background: #6f42c1;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+     input {
+      width: 80%;
+      padding: 8px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid rgb(255, 255, 255);
+    }
+    .container {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      width: 320px;
+      margin: auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    button:hover {
+      background: #36a25c;
+    }
+
+    .result {
+      margin-top: 3px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Factorial Calculator</h2>
+
+    <input type="number" id="num" placeholder="Enter a number">
+    <br>
+    <button onclick="calculateFactorial()">Calculate</button>
+
+    <div class="result" id="output"></div>
+  </div>
+
+  <script>
+    function calculateFactorial() {
+      let n = document.getElementById("num").value;
+      let output = document.getElementById("output");
+
+      if (n === "" || n < 0) {
+        output.innerHTML = "Please enter a valid non-negative number!";
+        return;
+      }
+
+      let fact = 1;
+
+      for (let i = 1; i <= n; i++) {
+        fact *= i;
+      }
+
+      output.innerHTML = "Factorial of " + n + " is: " + fact;
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
